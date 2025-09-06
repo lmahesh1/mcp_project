@@ -6,6 +6,8 @@
   "main": "mcp-brand-service.js",
   "scripts": {
     "start": "node ./mcp-brand-service.js",
+    "start:sse": "set MCP_TRANSPORT=sse&& set MCP_PORT=8000&& set MCP_PATH=/mcp&& node ./mcp-brand-service.js",
+    "client:sse": "node ./client-sse.js",
     "test:call": "node ./test-call.js"
   },
   "dependencies": {
